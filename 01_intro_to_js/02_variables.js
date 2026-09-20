@@ -6,6 +6,12 @@ built directly into the language's syntax.
 Category: Variable Declarations
 keywords: var, let, const
 What They Do: Define variables and constants.
+
+
+
+let - use let when the value needs to be change
+const - use const when the value should not be change
+
 */
 
 /*
@@ -15,11 +21,30 @@ A variable is like a labelled box
 │     100     │
 └─────────────┘
 The label is score.
-
 The value inside is 100.
 
-let - use let when the value needs to be change
-const - use const when the value should not be change
+
+
+
+Variable Naming Rules
+Variable names have some rules.
+
+CORRECT:
+let playerName;
+let age;
+let score2026;
+let _value;
+
+INCORRECT
+let 2name;       // ❌ cannot start with a number
+let player-name; // ❌ hyphen is not allowed
+let player name; // ❌ spaces are not allowed
+
+Also, JavaScript has reserved words that cannot be used as variable names:
+let let = 10;    // ❌
+let class = 8;   // ❌
+
+
 */
 
 // This is my score
@@ -40,5 +65,3 @@ console.log(schoolName);
 // We should not change it later.
 // schoolName = "XYZ School";
 // This gives an error because const cannot be reassigned.
-
-
